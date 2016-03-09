@@ -81,5 +81,9 @@ public class Aula {
 			e.printStackTrace();
 		}
 	}
+	@Override
+	public String toString() {
+		return (conteudo + "\t" + sdf.format(data) + "\t" + sala + "\t\t\t" + turma /*+ "\n\t\t\t"*/);
+	}
 
 }

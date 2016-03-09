@@ -6,7 +6,7 @@ import java.util.List;
 public class Professor {
 	private Long id;
 	private String nome;
-	private List<Aula> aula = new ArrayList();
+	private List<Aula> aula = new ArrayList<>();
 
 	public Professor(String nome) {
 		this.nome=nome;

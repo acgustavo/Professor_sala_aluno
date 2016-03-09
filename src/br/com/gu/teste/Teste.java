@@ -22,17 +22,18 @@ public class Teste {
 						
 		//cadastro de aulas 
 		Aula fisica1 = new Aula("Impulso e movimento linear", albert, "01/07/2015", e35, eng15_2);
+		albert.getAula().add(fisica1);
 		Aula fisica1_1 = new Aula("Impulso e movimento linear", albert, "03/07/2015", lab50, eng15_2);
+		albert.getAula().add(fisica1_1);
 		Aula fisica2 = new Aula("Queda livre de corpos", isaac, "28/08/2015", e35, eng15_2);
+		isaac.getAula().add(fisica2);
 		Aula fisica2_1 = new Aula("Queda livre de corpos", isaac, "03/09/2015", lab50, eng15_2);
+		isaac.getAula().add(fisica2_1);
 		
 		//impressao das aulas 
 		System.out.println("Professor\t\t" + " Conteudo\t\t\t" + " Data\t\t" + " Sala\t\t\t\t" + " Turma\t\t\t\t");
-		System.out.println(fisica1.getProfessor().getNome() +"\t\t"+ fisica1.getConteudo() +"\t"+ fisica1.getData() +"\t"+ fisica1.getSala().getNumero() +"\t\t\t"+ fisica1.getTurma().getSemestre());
-		System.out.println(fisica1_1.getProfessor().getNome() +"\t\t"+ fisica1_1.getConteudo() +"\t"+ fisica1_1.getData() +"\t"+ fisica1_1.getSala().getNumero() +"\t"+ fisica1_1.getTurma().getSemestre());
-		System.out.println(fisica2.getProfessor().getNome() +"\t\t"+ fisica2.getConteudo() +"\t\t"+ fisica2.getData() +"\t"+ fisica2.getSala().getNumero() +"\t\t\t"+ fisica2.getTurma().getSemestre());
-		System.out.println(fisica2_1.getProfessor().getNome() +"\t\t"+ fisica2_1.getConteudo() +"\t\t"+ fisica2_1.getData() +"\t"+ fisica2_1.getSala().getNumero() +"\t"+ fisica2_1.getTurma().getSemestre());
-		
+		System.out.println(albert.getNome() +"\t\t"+ albert.getAula());
+		System.out.println(isaac.getNome() +"\t\t"+ isaac.getAula());
 	}	
 
 }
