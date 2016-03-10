@@ -12,22 +12,22 @@ public class Aula {
 	private Sala sala;
 	private Turma turma;
 	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-	
+
 	public Aula(String conteudo, Professor professor, String data, Sala sala, Turma turma) {
 		this.conteudo = conteudo;
 		try {
 			this.data = sdf.parse(data);
 		} catch (ParseException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		this.professor = professor;
 		this.sala = sala;
 		this.turma = turma;
 	}
-	
+
 	public Aula() {
 	}
+
 	public Professor getProfessor() {
 		return professor;
 	}
@@ -77,13 +77,14 @@ public class Aula {
 		try {
 			this.data = sdf.parse(data);
 		} catch (ParseException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
+
 	@Override
 	public String toString() {
-		return (conteudo + "\t" + sdf.format(data) + "\t" + sala + "\t\t\t" + turma /*+ "\n\t\t\t"*/);
+		return (conteudo + "\t" + sdf.format(data) + "\t" + sala + "\t\t\t"
+				+ turma /* + "\n\t\t\t" */);
 	}
 
 }

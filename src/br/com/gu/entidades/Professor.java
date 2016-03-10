@@ -9,8 +9,9 @@ public class Professor {
 	private List<Aula> aula = new ArrayList<>();
 
 	public Professor(String nome) {
-		this.nome=nome;
+		this.nome = nome;
 	}
+
 	public List<Aula> getAula() {
 		return aula;
 	}
